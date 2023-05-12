@@ -1,0 +1,7 @@
+ext {
+    versions = [
+            'testcontainers': '1.17.4',
+            'mapstruct': '1.5.2.Final',
+            'querydsl': '5.0.0'
+    ]
+}
