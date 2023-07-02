@@ -40,3 +40,9 @@ VALUES (1, 1),
        (8, 3),
        (8, 5),
        (10, 5);
+
+INSERT INTO users (id, username, firstname, lastname, tel, address)
+VALUES (1, 'ruslan@mail.ru', 'Ruslan', 'Niyazov', '375295857929', 'Gavrilova 1'),
+       (2, 'ivan@mail.ru', 'Ivan', 'Ivanov', '375297841278', 'Stafeeva 16'),
+       (3, 'petr@mail.ru', 'Petr', 'Petrov', '375336307328', 'Laktionova 115');
+SELECT SETVAL('users_id_seq', (SELECT max(id) FROM users));
