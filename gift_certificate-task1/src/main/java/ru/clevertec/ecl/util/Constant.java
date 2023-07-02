@@ -22,15 +22,21 @@ public class Constant {
 
     public static final Integer ERROR_CODE = 40401;
     public static final Integer ERROR_CODE_VALID = 40402;
-    public static final Integer TIMEOUT = 5000;
+    public static final Integer TIMEOUT = 10000;
     public static final String FIELD_NAME_ID = "id";
     public static final String FIELD_NAME_PRICE = "price";
     public static final String PAGE = "page";
     public static final String SIZE = "size";
     public static final String SORT = "sort";
     public static final String EXCEPTION_MESSAGE = "Requested resource not found (%s = %s)";
-    public static final String URL_BASE = "localhost:";
     public static final String URL_SEQ = "/api/v1/orders/seq";
-    public static final String LOCAL_NAME = "kubernetes.docker.internal";
+    public static final Integer PORT = 8080;
+    public static final Integer FIRST_ELEMENT = 0;
+    public static final Integer FIRST_KEY = 1;
+    public static final Integer SECOND_KEY = 2;
+    public static final Integer THIRD_KEY = 3;
+    public static final Integer NUMBER_HOST = 10;
+    public static final String URL_HEALTH = "8080/api/actuator/health";
+    public static final String CRON = "0 0/5 * * * *";
 
 }

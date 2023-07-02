@@ -1,0 +1,155 @@
+version: '3.8'
+
+services:
+
+  app-node1:
+    build: .
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres1:5432/postgres
+    ports:
+      - 9001:8080
+    depends_on:
+      - postgres1
+  postgres1:
+    image: postgres:14.4
+    ports:
+      - 5421:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+
+  app-node2:
+    build: .
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres2:5432/postgres
+    ports:
+      - 9002:8080
+    depends_on:
+      - postgres2
+  postgres2:
+    image: postgres:14.4
+    ports:
+      - 5422:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+
+  app-node3:
+    build: .
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres3:5432/postgres
+    ports:
+      - 9003:8080
+    depends_on:
+      - postgres3
+  postgres3:
+    image: postgres:14.4
+    ports:
+      - 5423:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+
+  app-node4:
+    build: .
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres4:5432/postgres
+    ports:
+      - 9004:8080
+    depends_on:
+      - postgres4
+  postgres4:
+    image: postgres:14.4
+    ports:
+      - 5424:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+
+  app-node5:
+    build: .
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres5:5432/postgres
+    ports:
+      - 9005:8080
+    depends_on:
+      - postgres5
+  postgres5:
+    image: postgres:14.4
+    ports:
+      - 5425:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+
+  app-node6:
+    build: .
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres6:5432/postgres
+    ports:
+      - 9006:8080
+    depends_on:
+      - postgres6
+  postgres6:
+    image: postgres:14.4
+    ports:
+      - 5426:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+
+  app-node7:
+    build: .
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres7:5432/postgres
+    ports:
+      - 9007:8080
+    depends_on:
+      - postgres7
+  postgres7:
+    image: postgres:14.4
+    ports:
+        - 5427:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+
+  app-node8:
+    build: .
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres8:5432/postgres
+    ports:
+      - 9008:8080
+    depends_on:
+      - postgres8
+  postgres8:
+    image: postgres:14.4
+    ports:
+      - 5428:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+
+  app-node9:
+    build: .
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres9:5432/postgres
+    ports:
+      - 9009:8080
+    depends_on:
+      - postgres9
+  postgres9:
+    image: postgres:14.4
+    ports:
+      - 5429:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres

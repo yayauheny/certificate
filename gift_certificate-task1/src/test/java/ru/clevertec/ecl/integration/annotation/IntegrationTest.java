@@ -14,6 +14,6 @@ import java.lang.annotation.Target;
 @ActiveProfiles("test")
 @SpringBootTest
 @Transactional
-public @interface IT {
+public @interface IntegrationTest {
 
 }

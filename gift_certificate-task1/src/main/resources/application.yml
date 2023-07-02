@@ -20,3 +20,18 @@ spring:
 server:
   servlet:
     context-path: /api
+
+cluster:
+  hosts:
+    0:
+      - 'app-node3:'
+      - 'app-node6:'
+      - 'app-node9:'
+    1:
+      - 'app-node1:'
+      - 'app-node4:'
+      - 'app-node7:'
+    2:
+      - 'app-node2:'
+      - 'app-node5:'
+      - 'app-node8:'

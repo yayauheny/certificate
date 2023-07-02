@@ -5,9 +5,9 @@ import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.context.jdbc.Sql;
 import org.testcontainers.containers.PostgreSQLContainer;
-import ru.clevertec.ecl.integration.annotation.IT;
+import ru.clevertec.ecl.integration.annotation.IntegrationTest;
 
-@IT
+@IntegrationTest
 @Sql("classpath:sql/data.sql")
 public class TestBase {
 
